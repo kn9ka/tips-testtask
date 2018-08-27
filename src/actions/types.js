@@ -1,0 +1,6 @@
+export const EDIT_CITY_FROM = '@@city/EDIT_FROM'
+export const EDIT_CITY_TO = '@@city/EDIT_TO'
+export const INCREASE_LUGGAGE_AMOUNT = '@@luggage/INCREASE_AMOUNT'
+export const DECREASE_LUGGAGE_AMOUNT = '@@luggage/DECREASE_AMOUNT'
+export const ADD_ORDER_ITEM = '@@order/ADD_ORDER_ITEM'
+export const REMOVE_ORDER_ITEM = '@@order/REMOVE_ORDER_ITEM'

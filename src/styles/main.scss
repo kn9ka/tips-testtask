@@ -1,0 +1,14 @@
+@import "./forms.scss";
+@import "./pickers.scss";
+@import "./uikits.scss";
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
