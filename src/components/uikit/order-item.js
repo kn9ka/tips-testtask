@@ -1,6 +1,6 @@
 import React from 'react'
 import PlaneIcon from '../../styles/icons/plane_fly.svg'
-import { numberWithSpace } from '../../functions'
+import { numberWithSpace } from '../../services/functions'
 
 export const OrderItem = ({ order }) => {
   const { from, to, amount, price } = order

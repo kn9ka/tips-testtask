@@ -1,6 +1,6 @@
 import React from 'react'
 import PlaneIcon from '../../styles/icons/plane_fly.svg'
-import { numberWithSpace, parseTime } from '../../functions'
+import { numberWithSpace, parseTime } from '../../services/functions'
 
 export const Tickets = ({ tickets, onTicketSelect }) => {
   if (tickets.length === 0) { return <NoTicketsForm /> }
