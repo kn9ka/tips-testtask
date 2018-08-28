@@ -69,6 +69,11 @@ export class OrderForm extends Component {
 
   }
 
+  onOrderConfirm = () => {
+    console.log(this.props.orders)
+    // api.sendOrders(this.props.orders)
+  }
+
   render = () => {
     const { tickets, defaultView, isOverlayActive } = this.state
 
@@ -84,7 +89,7 @@ export class OrderForm extends Component {
           {defaultView ? <EmptyForm title='Начните поиск билетов' /> : (
             <Fragment>
               <Tickets tickets={tickets} onTicketSelect={this.onTicketSelect} />
-              {tickets.length > 0 && <ShoppingCart />}
+              {tickets.length > 0 && <ShoppingCart onOrderConfirm={this.onOrderConfirm} />}
             </Fragment>
           )}
         </div>

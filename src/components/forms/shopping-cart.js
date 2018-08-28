@@ -41,7 +41,7 @@ export class ShoppingCart extends Component {
         {orders.length > 0 ? (
           <Fragment>
             {orders.map(order => <OrderItem key={order.id} order={order} />)}
-            <button className='order-form__shopping-cart__buy-button'>Купить</button>
+            <button className='order-form__shopping-cart__buy-button' onClick={this.props.onOrderConfirm}>Купить</button>
           </Fragment>)
           : <EmptyForm title='Корзина пуста' />
         }
